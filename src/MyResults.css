@@ -1,0 +1,84 @@
+.results-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  background: white;
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border-color);
+  font-family: 'Inter', sans-serif;
+}
+
+.results-header {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: center;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+}
+
+.results-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+}
+
+.results-table th,
+.results-table td {
+  padding: 16px 20px;
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+  font-size: 0.95rem;
+}
+
+.results-table th {
+  background: #f9fafb;
+  color: var(--text-secondary);
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.results-table tr:last-child td {
+  border-bottom: none;
+}
+
+.results-table tr:hover {
+  background: #f9fafb;
+}
+
+.results-table td {
+  color: var(--text-primary);
+}
+
+.results-table td:first-child {
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.results-table td:nth-child(4) {
+  font-weight: 600;
+  color: #15803d; /* Green for score */
+}
+
+/* Loading and Error States */
+.results-container p {
+  text-align: center;
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  padding: 40px;
+}
+
+.results-container p.text-red-600 {
+  color: #ef4444;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+  margin: 20px 0;
+  padding: 16px;
+}

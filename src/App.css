@@ -1,0 +1,142 @@
+/* General Styling */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  height: 100vh;
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-container {
+  text-align: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 2rem;
+}
+
+/* Header */
+.header {
+  margin-bottom: 3rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-actions {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.app-logo {
+  height: 3.5rem;
+  width: auto;
+}
+
+.logo {
+  font-size: 3.5rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+/* Body Section */
+.main-content {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 3rem;
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  box-shadow: var(--shadow-md);
+}
+
+/* Tagline */
+.tagline {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+  line-height: 1.2;
+}
+
+/* Subtext */
+.subtext {
+  font-size: 1.1rem;
+  margin-bottom: 2.5rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Button Group */
+.button-group {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Buttons */
+.glow-btn {
+  background: var(--primary-color);
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 12px 32px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: var(--shadow-sm);
+}
+
+.glow-btn:hover {
+  background: var(--primary-hover);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+.glow-btn.secondary {
+  background: white;
+  color: var(--primary-color);
+  border: 1px solid var(--border-color);
+}
+
+.glow-btn.secondary:hover {
+  background: #f9fafb;
+  border-color: var(--primary-color);
+}
+
+.account-link {
+  margin-top: 1.5rem;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+}
+
+.account-link a {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.account-link a:hover {
+  text-decoration: underline;
+}
